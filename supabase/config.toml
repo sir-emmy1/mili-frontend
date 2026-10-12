@@ -1,0 +1,12 @@
+# Supabase CLI project config for Lumen Studio.
+# Full reference: https://supabase.com/docs/guides/cli/config
+project_id = "lumen-studio"
+
+[functions.send-email]
+# Invoked from the browser after a booking; no user JWT is sent,
+# so verification is disabled here (validation happens in-function).
+verify_jwt = false
+
+[functions.process-reminders]
+# Called by a scheduler with the service-role key, not an end user.
+verify_jwt = false

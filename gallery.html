@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BIE — Portfolio</title>
+  <meta name="description" content="Portfolio by Bamiyo — portraits, events and arts photography from Lagos, Nigeria." />
+  <link rel="canonical" href="https://biephotography.example/gallery.html" />
+  <meta property="og:title" content="Portfolio — BIE Photography" />
+  <meta property="og:image" content="assets/og-cover.svg" />
+  <meta name="theme-color" content="#111013" />
+  <link rel="icon" type="image/png" href="assets/logof.png" />
+  <link rel="apple-touch-icon" href="assets/logof.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&family=Marcellus+SC&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="nav" role="banner">
+    <a href="index.html" class="brand" aria-label="Bamiyo Iselema Emina — home"><img class="brand__logo" data-brand-logo alt="" hidden />
+        <span class="brand__mark" aria-hidden="true"></span> <span data-brand-name>Bamiyo Iselema Emina</span></a>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav__cta"><a href="contact.html" class="btn btn--sm btn--accent">Book a session</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ── Hero — switches when a filter is picked ────────────── -->
+    <div class="gallery-hero" id="galleryHero" aria-live="polite">
+
+      <!-- ALL -->
+      <section class="gallery-hero__slide is-active" data-hero="all">
+        <div class="gallery-hero__carousel" data-carousel="all">
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=1920&q=80')"></div>
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1920&q=80')"></div>
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1920&q=80')"></div>
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1920&q=80')"></div>
+        </div>
+        <div class="wrap gallery-hero__inner">
+          <p class="eyebrow reveal">Portfolio · Lagos, Nigeria</p>
+          <h1 class="reveal" data-delay="1">Daily moments turned into timeless portraits of human essence.</h1>
+          <p class="lead reveal" data-delay="2">My work is a reflection of what I appreciate in life — the magic of minor life moments. I take these instances and freeze them in time through photography.</p>
+          <div class="gallery-hero__filters reveal" data-delay="3" id="filters" role="group" aria-label="Filter portfolio by category"></div>
+        </div>
+      </section>
+
+      <!-- PORTRAIT -->
+      <section class="gallery-hero__slide" data-hero="portrait" hidden>
+        <div class="gallery-hero__carousel" data-carousel="portrait">
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=1920&q=80')"></div>
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1920&q=80')"></div>
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1920&q=80')"></div>
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1920&q=80')"></div>
+        </div>
+        <div class="wrap gallery-hero__inner">
+          <p class="eyebrow">Portraiture</p>
+          <h1>Human essence, <em>framed</em> in a picture.</h1>
+          <p class="lead">Proudly Delta Nigerian. I believe portraiture is the highest form of photography — the art of revealing a person's truth in a single frame. Every sitting is unhurried, every edit is honest.</p>
+          <div class="gallery-hero__filters" id="filters-portrait" role="group" aria-label="Filter portfolio by category"></div>
+        </div>
+      </section>
+
+      <!-- EVENTS -->
+      <section class="gallery-hero__slide" data-hero="events" hidden>
+        <div class="gallery-hero__carousel" data-carousel="events">
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1920&q=80')"></div>
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1920&q=80')"></div>
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1519167758481-83f29da8031c?auto=format&fit=crop&w=1920&q=80')"></div>
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1920&q=80')"></div>
+        </div>
+        <div class="wrap gallery-hero__inner">
+          <p class="eyebrow">Events</p>
+          <h1>Event photography — <em>a pleasure.</em></h1>
+          <p class="lead">Corporate gatherings, cultural celebrations, social moments. I document events with a documentary instinct — the energy, the in-between moments, the ones that would otherwise be forgotten.</p>
+          <div class="gallery-hero__filters" id="filters-events" role="group" aria-label="Filter portfolio by category"></div>
+        </div>
+      </section>
+
+      <!-- ARTS -->
+      <section class="gallery-hero__slide" data-hero="arts" hidden>
+        <div class="gallery-hero__carousel" data-carousel="arts">
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1920&q=80')"></div>
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1920&q=80')"></div>
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1558769132-cb1aea1f1c57?auto=format&fit=crop&w=1920&q=80')"></div>
+          <div class="gallery-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1920&q=80')"></div>
+        </div>
+        <div class="wrap gallery-hero__inner">
+          <p class="eyebrow">Arts</p>
+          <h1>Art is my <em>first love.</em></h1>
+          <p class="lead">Fashion editorials, fine art, creative campaigns. A product of TY Bello — inspired by Annie Leibovitz, Lindsay Adler, and the hardcore imagery of Don Barber. Every frame is a deliberate creative act.</p>
+          <div class="gallery-hero__filters" id="filters-arts" role="group" aria-label="Filter portfolio by category"></div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ── Grid ──────────────────────────────────────────────── -->
+    <section class="section wrap">
+      <div class="masonry" id="masonry" aria-busy="true" aria-live="polite">
+        <p class="text-muted">Loading gallery…</p>
+      </div>
+    </section>
+
+    <!-- ── Connect CTA — mirrors the old Pixieset site ────────── -->
+    <section class="section wrap center gallery-connect">
+      <p class="eyebrow reveal reveal--up" style="justify-content:center">Let's connect</p>
+      <h2 class="section-title reveal reveal--up" data-delay="1" style="margin-inline:auto">My work is a reflection of what I appreciate in life.</h2>
+      <p class="lead reveal reveal--up" data-delay="2" style="margin-inline:auto;text-align:center">The magic of minor life moments — frozen in time through photography.</p>
+
+      <div class="gallery-connect__row reveal reveal--up" data-delay="3">
+        <a href="about.html" class="gallery-connect__card">
+          <span class="gallery-connect__icon" aria-hidden="true">👤</span>
+          <strong>More about me</strong>
+          <span>Find out about</span>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="gallery-connect__card gallery-connect__card--insta">
+          <span class="gallery-connect__icon" aria-hidden="true">📸</span>
+          <strong>Follow on Instagram</strong>
+          <span>@biephotography</span>
+        </a>
+        <a href="contact.html" class="gallery-connect__card gallery-connect__card--cta">
+          <span class="gallery-connect__icon" aria-hidden="true">✉️</span>
+          <strong>Get in touch</strong>
+          <span>Book a session</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" data-close aria-label="Close viewer">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" data-prev aria-label="Previous image">‹</button>
+    <button class="lightbox__nav lightbox__nav--next" data-next aria-label="Next image">›</button>
+    <img id="lightboxImg" alt="" />
+    <div class="lightbox__cap">
+      <h3 id="lightboxTitle"></h3>
+      <p id="lightboxDesc"></p>
+      <p class="mono" id="lightboxMeta" style="font-size:.72rem;color:var(--safelight);letter-spacing:.1em"></p>
+    </div>
+  </div>
+
+  <div class="footer__bottom"><span>© <span data-year>2026</span> <span data-brand-name></span>.</span><span>Built with light <li><a href="admin.html">A</a></li></span></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/supabaseClient.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/currency.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

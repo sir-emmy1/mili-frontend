@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BIE - Contact&amp;Booking</title>
+  <meta name="description" content="Book a photography session with BIE PHOTOGRAPHY, or send us a message. We reply within one business day." />
+  <link rel="canonical" href="https://biephotography.example/contact.html" />
+  <meta property="og:title" content="Contact &amp; Booking — BIE PHOTOGRAPHY" />
+  <meta property="og:image" content="assets/og-cover.svg" />
+  <meta name="theme-color" content="#111013" />
+  <link rel="icon" type="image/png" href="assets/logof.png" />
+  <link rel="apple-touch-icon" href="assets/logof.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&family=Marcellus+SC&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="nav" role="banner">
+    <a href="index.html" class="brand" aria-label="Bamiyo Iselema Emina — home"><img class="brand__logo" data-brand-logo alt="" hidden />
+        <span class="brand__mark" aria-hidden="true"></span> <span data-brand-name>Bamiyo Iselema Emina</span></a>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li class="nav__cta"><a href="contact.html" class="btn btn--sm btn--accent">Book a session</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('contact.jpg');background-size:cover;background-position:center;">
+      <div class="wrap page-hero__inner">
+        <p class="eyebrow reveal">Contact &amp; booking</p>
+        <h1 class="section-title reveal" data-delay="1" style="font-size:clamp(2.6rem,7vw,5rem)">Let's start documenting your story.</h1>
+        <p class="lead reveal" data-delay="2">Fill in a little about what you have in mind — I'll follow up within one business day. Prefer to talk first? Call or WhatsApp me directly.</p>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="grid grid--split" style="align-items:start">
+        <form id="bookingForm" class="reveal" novalidate aria-describedby="formStatus">
+          <div id="formStatus" role="alert" aria-live="assertive"></div>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="package">Package</label>
+              <select id="package" name="package" required>
+                <option value="">Select a package…</option>
+              </select>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="date">Preferred date &amp; time</label>
+              <input id="date" name="date" type="datetime-local" required />
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="details">Tell us about the shoot</label>
+            <textarea id="details" name="details" placeholder="Location, number of people, mood, references…"></textarea>
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="btn btn--accent btn--block" id="submitBtn">Request booking</button>
+          <p class="form-note" style="margin-top:.8rem">By requesting, you agree to be contacted about your session. No spam, ever.</p>
+        </form>
+
+        <aside class="reveal" data-delay="2">
+          <div class="card">
+            <p class="eyebrow">Direct lines</p>
+            <h3 style="font-size:1.6rem;margin-top:.5rem">Prefer to talk first?</h3>
+            <p class="text-muted">Happy to chat through ideas before you commit to a date.</p>
+            <p style="margin-top:1rem"><a href="mailto:Kiosh.7111@gmail.com" style="color:var(--safelight)">Kiosh.7111@gmail.com</a></p>
+            <p class="mono" style="font-size:.8rem;color:var(--muted);margin-top:.4rem">+234 805 511 0178</p>
+            <p class="mono" style="font-size:.8rem;color:var(--muted)">+234 708 858 5990</p>
+            <a href="#" class="btn btn--whatsapp btn--block" data-whatsapp="Hi Bamiyo! I have a question about booking." style="margin-top:1rem">Chat on WhatsApp</a>
+          </div>
+          <div class="card" style="margin-top:1rem">
+            <p class="eyebrow">What happens next</p>
+            <ol class="text-muted" style="padding-left:1.1rem;margin-top:.6rem;line-height:1.9">
+              <li>We review dates and reply within a day.</li>
+              <li>We lock the date and send a short prep guide.</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer__bottom"><span>© <span data-year>2026</span> <span data-brand-name></span>.</span><span>Built with light <li><a href="admin.html">A</a></li></span></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/supabaseClient.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/currency.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
